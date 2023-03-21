@@ -6,7 +6,7 @@ from keras.regularizers import l2
 from keras import backend as K
 from tensorflow.keras.optimizers import Adam
 from skimage.io import imshow
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import random
