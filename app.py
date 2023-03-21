@@ -13,7 +13,7 @@ import random
 from keras.preprocessing import image
 from tensorflow.keras.preprocessing.image import img_to_array
 import tensorflow as tf
-from matplotlib import pyplot as plt
+#from matplotlib import pyplot as plt
 from imutils import face_utils
 import numpy as np
 # import argparse
@@ -84,14 +84,6 @@ def get_siamese_model(input_shape):
     
     # return the model
     return siamese_net
-
-def plt_imshow(title, image):
-  # convert the image frame BGR to RGB color space and display it
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-    plt.imshow(image)
-    plt.title(title)
-    plt.grid(False)
-    plt.show()
 
 def crop_center(pil_img, crop_width, crop_height):
     img_width, img_height = pil_img.size
